@@ -13,3 +13,27 @@ Wij adviseren om altijd gebruik te maken van een VPN dienst. NordVPN of ExpressV
 Onder het menu in -> Systeem/Programma's vindt je de addon OpenVPN. Hier kun je elke vpn dienst instellen.
 
 Be Safe
+
+2
+|||
+The Dutch 1.4 is uit. 
+Zoals jullie wel gemerkt hebben leggen diverse addons de laatste tijd het loodje.
+Zodoende waren we genoodzaakt om een update van TheDutchKodi uit te brengen.
+Wat is er veranderd?
+Elysium, Exodus, SaltsHDLite en nog een aantal niet meer werkende video addons zijn verwijderd. 
+
+Versie 1.4 toegevoegd aan The Dutch Wizard (GA HIERHEEN en INSTALLEER DE NIEUWE VERSIE)
+Video Addon Bennu toegevoegd
+Video Addon Covenant toegevoegd
+
+Diverse overbodige en niet werkende Muziek,Programma addons verwijderd.
+
+Skin achtergronden geupdate en aangepast
+Menu aangepast en geupdate i.v.m. de nieuwe addons
+
+Simple IPTV client toegevoegd met werkende tv zenders! (wordt iedere week geupdate) 
+
+VPN INSTELLEN toegevoegd in het hoofdmenu. We kunnen het niet vaak genoeg zeggen. 
+maak gebruik van een VPN en voorkom boetes. Streamen is tenslotte illegaal!
+
+Aanraders zijn: NORDVPN & CyberGhost VPN
