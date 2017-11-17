@@ -1,14 +1,10 @@
 
-4
+5
 |||
-The Dutch 1.4 is uit. 
-Elysium, Exodus, SaltsHDLite en nog een aantal niet meer werkende video addons zijn verwijderd. 
-Versie 1.4 toegevoegd aan The Dutch Wizard (GA HIERHEEN en INSTALLEER DE NIEUWE VERSIE)
-Video Addon Bennu toegevoegd
-Video Addon Covenant toegevoegd
-Skin achtergronden geupdate en aangepast
-Menu aangepast en geupdate i.v.m. de nieuwe addons
-Simple IPTV client toegevoegd met werkende tv zenders! (wordt iedere week geupdate) 
-VPN INSTELLEN toegevoegd in het hoofdmenu. We kunnen het niet vaak genoeg zeggen. 
+Ten gevolge van diverse claims en brieven van diverse grote filmstudios zijn 
+De repostitories  van Colossus, ares-project, dandymedia offline
+Hierdoor werken de volgende addons niet meer: Bennu, Covenant, alle ares addons.
+Wij werken inmiddels aan vervangende addons!
+We kunnen het niet vaak genoeg zeggen. 
 maak gebruik van een VPN en voorkom boetes. Streamen is tenslotte illegaal!
 Aanraders zijn: NORDVPN & CyberGhost VPN
