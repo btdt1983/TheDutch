@@ -1,10 +1,8 @@
 
-5
+
+6
 |||
-Ten gevolge van diverse claims en brieven van diverse grote filmstudios zijn 
-De repostitories  van Colossus, ares-project, dandymedia offline
-Hierdoor werken de volgende addons niet meer: Bennu, Covenant, alle ares addons.
-Wij werken inmiddels aan vervangende addons!
-We kunnen het niet vaak genoeg zeggen. 
-maak gebruik van een VPN en voorkom boetes. Streamen is tenslotte illegaal!
-Aanraders zijn: NORDVPN & CyberGhost VPN
+(17-11-2017) Ten gevolge van diverse claims en brieven van diverse grote filmstudios zijn 
+de repostitories en de url resolver van Colossus, ares-project, dandymedia offline. Hierdoor werken heel veel addons niet meer.. oa: Bennu, Covenant. Inmiddels is een nieuwe werkende build (The Dutch Extended) via onze Wizard beschikbaar! Kies Fresh Install en geniet weer van werkende streams.
+
+
