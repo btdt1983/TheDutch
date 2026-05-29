@@ -1,8 +1,3 @@
-5
-|||
-6
-|||
-(17-11-2017) Ten gevolge van diverse claims en brieven van diverse grote filmstudios zijn 
-de repostitories en de url resolver van Colossus, ares-project, dandymedia offline. Hierdoor werken heel veel addons niet meer.. oa: Bennu, Covenant. Inmiddels is een nieuwe werkende build (The Dutch Extended) via onze Wizard beschikbaar! Kies Fresh Install en geniet weer van werkende streams.
+
 
 
