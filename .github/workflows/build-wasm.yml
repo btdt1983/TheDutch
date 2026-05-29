@@ -1,1 +1,62 @@
+name: Build WASM
 
+on:
+  push:
+    paths:
+      - "dsp/**"
+      - ".github/workflows/build-wasm.yml"
+  pull_request:
+    paths:
+      - "dsp/**"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Cache cargo registry + build target between runs. First run takes ~1 min;
+      # subsequent runs are ~10 s.
+      - name: Cache cargo
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            dsp/target
+          key: ${{ runner.os }}-cargo-${{ hashFiles('dsp/Cargo.toml', 'dsp/Cargo.lock') }}
+          restore-keys: ${{ runner.os }}-cargo-
+
+      # The runners ship rustup; just add the wasm target. This is what the
+      # Termux Rust pkg can't do reliably, hence we build in the cloud.
+      - name: Add wasm32 target
+        run: rustup target add wasm32-unknown-unknown
+
+      - name: Run tests (native)
+        working-directory: dsp
+        run: cargo test --release
+
+      - name: Build for wasm32
+        working-directory: dsp
+        run: cargo build --release --target wasm32-unknown-unknown
+
+      # Optional but recommended: wasm-opt strips dead code and shaves another
+      # 20-40% off the binary. binaryen is in the default Ubuntu repos.
+      - name: Install binaryen (wasm-opt)
+        run: sudo apt-get install -y binaryen
+
+      - name: Optimise WASM
+        run: |
+          wasm-opt -O3 --strip-debug \
+            dsp/target/wasm32-unknown-unknown/release/mastering_dsp.wasm \
+            -o mastering_dsp.wasm
+          ls -la mastering_dsp.wasm
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: mastering-dsp-wasm
+          path: mastering_dsp.wasm
+          if-no-files-found: error
+          retention-days: 30
