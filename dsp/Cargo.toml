@@ -1,1 +1,16 @@
+[package]
+name = "mastering_dsp"
+version = "0.1.0"
+edition = "2021"
 
+[lib]
+# cdylib = produce a single .wasm file with C-style exports we can call from
+# the AudioWorklet via the raw WebAssembly API (no wasm-bindgen needed).
+crate-type = ["cdylib"]
+
+[profile.release]
+opt-level = 3        # full speed
+lto = "fat"          # whole-program inlining, tighter & faster
+codegen-units = 1    # let LLVM see everything at once
+panic = "abort"      # smaller binary, no unwinding tables
+strip = true         # drop symbols
