@@ -49,9 +49,16 @@ jobs:
       - name: Optimise WASM
         run: |
           wasm-opt -O3 --strip-debug \
-            --enable-bulk-memory --enable-nontrapping-float-to-int \
+            --enable-sign-ext \
+            --enable-bulk-memory \
+            --enable-nontrapping-float-to-int \
+            --enable-mutable-globals \
+            --enable-multivalue \
+            --enable-reference-types \
+            --enable-simd \
             dsp/target/wasm32-unknown-unknown/release/mastering_dsp.wasm \
             -o mastering_dsp.wasm
+          ls -la mastering_dsp.wasm
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
